@@ -1,0 +1,12 @@
+Appointments SHow page
+
+<h1><%= @appointment.appointment_datetime %></h1> <br>
+
+
+<%= link_to @appointment.patient.name, patient_path(@appointment.patient) %> <br>
+
+
+<%= link_to @appointment.doctor.name, doctor_path(@appointment.doctor) %> <br>
+
+
+

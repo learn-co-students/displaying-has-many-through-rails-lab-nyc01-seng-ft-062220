@@ -1,0 +1,14 @@
+<h1> Patient's Index Page </h1>
+
+<% @patients.each do |patient|  %>
+
+<%= link_to patient.name, patient_path(patient) %>
+<%= ":" %>
+<%= patient.appointments.count %>
+<br><br>
+
+
+
+
+
+<% end %>
