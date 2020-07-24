@@ -2,6 +2,8 @@ Doctor.destroy_all
 Patient.destroy_all
 Appointment.destroy_all
 
+puts "seeds destroyed..."
+
 meredith = Doctor.create({name: "Meredith Grey", department: "Internal Medicine"})
 hawkeye = Doctor.create({name: "Hawkeye Pierce", department: "Surgery"})
 leonard = Doctor.create({name: "Leonard 'Bones' McCoy", department: "Internal Medicine"})
@@ -23,3 +25,5 @@ Appointment.create([
   {appointment_datetime: DateTime.new(2016, 05, 31, 17, 00, 0), patient: homer, doctor: hawkeye},
   {appointment_datetime: DateTime.new(2017, 06, 03, 10, 00, 0), patient: marge, doctor: meredith}
 ])
+
+puts "seeds created..."
